@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Виктор Викторович | Senior Developer</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Интерактивный фон (Canvas) -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Декоративная сетка -->
+    <div class="grid-bg"></div>
+
+    <main class="app-container">
+        
+        <!-- ЛЕВАЯ КОЛОНКА: Инфо -->
+        <section class="info-panel">
+            <div class="header-tag">
+                <span class="dot-status"></span>
+                OPEN FOR WORK
+            </div>
+            
+            <h1 class="glitch-name" data-text="ВИКТОР">ВИКТОР</h1>
+            <h2 class="sub-name">ВИКТОРОВИЧ</h2>
+            
+            <p class="bio">
+                Создаю архитектурные решения и пишу чистый код. 
+                Специализация: Backend & Frontend разработка.
+            </p>
+
+            <!-- Статистика (Деловой стиль) -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="5">0</span>
+                    <span class="stat-label">Лет опыта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="50">0</span>
+                    <span class="stat-label">Проектов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Языка</span>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <div class="tech-pill"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="tech-pill"><i class="fa-brands fa-node-js"></i> NodeJS</div>
+                <div class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            </div>
+        </section>
+
+        <!-- ЦЕНТР/ПРАВО: Интерактивная Карточка -->
+        <section class="card-panel">
+            <div class="glass-card" id="tilt-card">
+                <!-- Верхняя панель терминала -->
+                <div class="terminal-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">victor@dev: ~</span>
+                </div>
+
+                <!-- Тело терминала -->
+                <div class="terminal-body">
+                    <div class="line">
+                        <span class="prompt">$</span> <span id="typewriter"></span><span class="cursor">█</span>
+                    </div>
+                    <div class="output hidden" id="terminal-output">
+                        <p>> Инициализация модулей...</p>
+                        <p>> Загрузка Python [OK]</p>
+                        <p>> Загрузка NodeJS [OK]</p>
+                        <p>> Стилизация CSS [OK]</p>
+                        <p class="success">> Система готова к работе.</p>
+                    </div>
+                </div>
+
+                <!-- Соцсети внутри карточки или под ней -->
+                <div class="social-dock">
+                    <a href="#" class="dock-btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="dock-btn" title="TG Channel"><i class="fa-solid fa-bullhorn"></i></a>
+                    <a href="#" class="dock-btn" title="VKontakte"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" class="dock-btn" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <!-- Светящийся шар позади карточки -->
+            <div class="glow-orb"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
